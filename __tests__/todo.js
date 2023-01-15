@@ -6,7 +6,6 @@ const app = require("../app");
 //const todo = require("../models/todo");
 let server, agent;
 
-
 function extractCsrfToken(res) {
   var $ = cheerio.load(res.text);
   return $("[name=_csrf]").val();
